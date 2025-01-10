@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: sistemaInventario-Productos
+  datasource:
+    url: jdbc:mysql://localhost:3306/db_systemInventory
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+
+server:
+  port: 8080
+  servlet:
+    context-path: /systemInventory
