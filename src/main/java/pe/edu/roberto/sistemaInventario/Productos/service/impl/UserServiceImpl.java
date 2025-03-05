@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import pe.edu.roberto.sistemaInventario.Productos.dto.LoginRequest;
 import pe.edu.roberto.sistemaInventario.Productos.model.User;
 import pe.edu.roberto.sistemaInventario.Productos.repository.UserRepository;
 import pe.edu.roberto.sistemaInventario.Productos.service.UserService;
@@ -46,7 +47,7 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Override
-	public boolean validateLogin(User user) {
+	public boolean validateLogin(LoginRequest user) {
 		return userRepository
 				.findByUsernameAndPassword(user.getUsername(), user.getPassword())
 				.isPresent();

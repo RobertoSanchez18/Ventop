@@ -2,6 +2,7 @@ package pe.edu.roberto.sistemaInventario.Productos.service;
 
 import java.util.List;
 
+import pe.edu.roberto.sistemaInventario.Productos.dto.LoginRequest;
 import pe.edu.roberto.sistemaInventario.Productos.model.User;
 
 public interface UserService {
@@ -14,7 +15,7 @@ public interface UserService {
 	
 	User updateUser(User user, Long id);
 	
-	boolean validateLogin(User user);
+	boolean validateLogin(LoginRequest user);
 	
 	void deleteUser(Long id);
 	

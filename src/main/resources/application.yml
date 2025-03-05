@@ -17,3 +17,14 @@ server:
   port: 8080
   servlet:
     context-path: /systemInventory
+
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+  info:
+    title: "Título de tu API"
+    description: "Descripción de tu API"
+    version:

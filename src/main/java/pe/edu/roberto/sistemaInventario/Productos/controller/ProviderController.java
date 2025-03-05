@@ -21,7 +21,6 @@ import pe.edu.roberto.sistemaInventario.Productos.model.Provider;
 import pe.edu.roberto.sistemaInventario.Productos.repository.ProviderRepository;
 import pe.edu.roberto.sistemaInventario.Productos.service.impl.ProviderServiceImpl;
 
-@CrossOrigin("*")
 @RestController
 @RequestMapping("/api/v1/providers")
 public class ProviderController {

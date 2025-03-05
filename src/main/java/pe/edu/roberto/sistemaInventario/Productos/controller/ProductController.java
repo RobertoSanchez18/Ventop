@@ -12,7 +12,6 @@ import pe.edu.roberto.sistemaInventario.Productos.model.dto.ProductDTO;
 import pe.edu.roberto.sistemaInventario.Productos.repository.ProductRepository;
 import pe.edu.roberto.sistemaInventario.Productos.service.impl.ProductServiceImpl;
 
-@CrossOrigin("*")
 @RestController
 @RequestMapping("/api/v1/products")
 public class ProductController {

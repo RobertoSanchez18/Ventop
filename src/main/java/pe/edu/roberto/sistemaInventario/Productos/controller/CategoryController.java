@@ -7,7 +7,6 @@ import pe.edu.roberto.sistemaInventario.Productos.service.impl.CategoryServiceIm
 
 import java.util.List;
 
-@CrossOrigin("*")
 @RestController
 @RequestMapping("/api/v1/categories")
 public class CategoryController {
