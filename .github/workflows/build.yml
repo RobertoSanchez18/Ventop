@@ -1,6 +1,6 @@
 name: CI/CD Pipeline
 
-# cuando se hace push
+# cuando se hace push.
 on:
   push:
     branches: [ feature/copyMain ]
