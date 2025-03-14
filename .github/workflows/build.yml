@@ -28,3 +28,6 @@ jobs:
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/ventop:latest
       - run: echo "Image in Docker success"
+
+
+      - run: ls -l
