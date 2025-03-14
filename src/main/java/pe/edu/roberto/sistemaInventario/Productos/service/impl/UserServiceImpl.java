@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import pe.edu.roberto.sistemaInventario.Productos.dto.LoginRequest;
+import pe.edu.roberto.sistemaInventario.Productos.model.dto.LoginRequest;
 import pe.edu.roberto.sistemaInventario.Productos.model.User;
 import pe.edu.roberto.sistemaInventario.Productos.repository.UserRepository;
 import pe.edu.roberto.sistemaInventario.Productos.service.UserService;

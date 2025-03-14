@@ -1,8 +1,6 @@
 package pe.edu.roberto.sistemaInventario.Productos.service;
 
-import org.springframework.stereotype.Service;
-import pe.edu.roberto.sistemaInventario.Productos.dto.SalesDTO;
-import pe.edu.roberto.sistemaInventario.Productos.model.Provider;
+import pe.edu.roberto.sistemaInventario.Productos.model.dto.SalesDTO;
 import pe.edu.roberto.sistemaInventario.Productos.model.Sales;
 
 import java.util.List;

@@ -1,8 +1,10 @@
 package pe.edu.roberto.sistemaInventario.Productos.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import pe.edu.roberto.sistemaInventario.Productos.dto.SalesDTO;
+import pe.edu.roberto.sistemaInventario.Productos.model.dto.SalesDTO;
 import pe.edu.roberto.sistemaInventario.Productos.model.Sales;
 import pe.edu.roberto.sistemaInventario.Productos.service.SalesService;
 
@@ -26,8 +28,9 @@ public class SaleController {
     }
 
     @PostMapping
-    public Sales createSale(@RequestBody SalesDTO sale) {
-        return salesService.saveSales(sale);
+    public ResponseEntity<Sales> createSale(@RequestBody SalesDTO salesDTO) {
+        Sales createdSale = salesService.saveSales(salesDTO);
+        return ResponseEntity.status(HttpStatus.CREATED).body(createdSale);
     }
 
     @PutMapping("/{id}")

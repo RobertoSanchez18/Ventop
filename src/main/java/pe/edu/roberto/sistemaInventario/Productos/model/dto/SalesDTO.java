@@ -1,11 +1,16 @@
-package pe.edu.roberto.sistemaInventario.Productos.dto;
+package pe.edu.roberto.sistemaInventario.Productos.model.dto;
 
-import lombok.Data;
+import lombok.*;
 import pe.edu.roberto.sistemaInventario.Productos.enums.SaleStatus;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
-@Data
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class SalesDTO {
 
     private Long customerId;
@@ -13,5 +18,6 @@ public class SalesDTO {
     private Double totalAmount;
     private Long paymentMethodId;
     private SaleStatus status;
+    private List<SalesItemDTO> items = new ArrayList<>();
 
 }

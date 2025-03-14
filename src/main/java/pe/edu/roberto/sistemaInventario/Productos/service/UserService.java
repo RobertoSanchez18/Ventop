@@ -2,7 +2,7 @@ package pe.edu.roberto.sistemaInventario.Productos.service;
 
 import java.util.List;
 
-import pe.edu.roberto.sistemaInventario.Productos.dto.LoginRequest;
+import pe.edu.roberto.sistemaInventario.Productos.model.dto.LoginRequest;
 import pe.edu.roberto.sistemaInventario.Productos.model.User;
 
 public interface UserService {

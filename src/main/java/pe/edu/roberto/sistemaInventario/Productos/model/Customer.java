@@ -22,12 +22,12 @@ public class Customer {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id;
+    private Long id;
 
-    String nameAndSurname;
-    String email;
-    String phone;
-    String address;
-    LocalDate registrationDate;
-    String status;
+    private String nameAndSurname;
+    private String email;
+    private String phone;
+    private String address;
+    private LocalDate registrationDate;
+    private String status;
 }

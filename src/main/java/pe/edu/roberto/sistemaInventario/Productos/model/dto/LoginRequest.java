@@ -1,4 +1,4 @@
-package pe.edu.roberto.sistemaInventario.Productos.dto;
+package pe.edu.roberto.sistemaInventario.Productos.model.dto;
 
 import lombok.Data;
 
