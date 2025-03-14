@@ -29,5 +29,15 @@ jobs:
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/ventop:latest
       - run: echo "Image in Docker success"
 
+      - name: whatsapp-notify
+        id: whatsapp-notify
+        env:
+          account_sid: ${{ secrets.account_sid }}
+          auth_token: ${{ secrets.auth_token }}
+          to_whatsapp_no: ${{ secrets.to_whatsapp_no }}
 
-      - run: ls -l
+        uses: ishween/whatsapp-push-notify-action@master
+
+      - name: Run
+        run: |
+          echo 'Start!'
